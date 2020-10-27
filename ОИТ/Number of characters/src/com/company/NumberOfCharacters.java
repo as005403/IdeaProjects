@@ -7,7 +7,7 @@ public class NumberOfCharacters {
 
     public static void generation(){
 
-        try(FileWriter file = new FileWriter("D://My projects//IdeaProjects//ОИТ//Number of characters//file.txt"))
+        try(FileWriter file = new FileWriter("file.txt"))
         {
             char[] chars = "abcdefghijklmnopqrstuvwxyz".toCharArray();
             SecureRandom rd = new SecureRandom();
@@ -29,7 +29,7 @@ public class NumberOfCharacters {
 
         int number = 0;
 
-        try (FileReader file = new FileReader("D://My projects//IdeaProjects//ОИТ//Number of characters//file.txt")) {
+        try (FileReader file = new FileReader("file.txt")) {
             int c;
             while ((c = file.read()) != -1) {
                 if (character == (char)c) number++;
