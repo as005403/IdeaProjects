@@ -7,7 +7,7 @@ public class Main {
 
         Haffman haffman = new Haffman("file.txt");
 
-        haffman.getDataFromList();
-//        haffman.getDataFromQueue();
+//        haffman.getDataFromList();
+        haffman.getDataFromQueue();
     }
 }

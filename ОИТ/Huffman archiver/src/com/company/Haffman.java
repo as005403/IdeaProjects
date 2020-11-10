@@ -8,7 +8,7 @@ public class Haffman {
 
     private char[] chars = "abcdefghijklmnopqrstuvwxyz".toCharArray();
     private ArrayList<Priority> symbolPriorityList = new ArrayList<Priority>();
-    private Queue<Priority> symbolPriorityQueue = new PriorityQueue<>(26, frequencyComparator);
+    private Queue<Priority> symbolPriorityQueue = new PriorityQueue<>(frequencyComparator);
 
     public Haffman(String fileName){
         CalculationSymbolsList(fileName);
@@ -85,5 +85,6 @@ public class Haffman {
             if (symbol == null) break;
             System.out.println(symbol.getSymbol() + ": " + symbol.getFrequency());
         }
+        AddSymbolsToQueue();
     }
 }
