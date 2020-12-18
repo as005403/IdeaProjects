@@ -5,9 +5,11 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
 
-        Haffman haffman = new Haffman("file.txt");
+        Haffman haffman = new Haffman("input.txt");
 
 //        haffman.getDataFromList();
-        haffman.getDataFromQueue();
+//        haffman.getDataFromQueue();
+//        System.out.println(haffman.symbolsCode);
+
     }
 }
